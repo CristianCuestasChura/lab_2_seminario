@@ -29,8 +29,7 @@ describe('VolumeSlider Component', () => {
   });
 
   it('debe iniciar en 80 con defaultValue={80}', () => {
-  render(<VolumeSlider label="Prueba" defaultValue={80} />);
-  expect(screen.getByRole('slider')).toHaveAttribute('aria-valuenow', '80');
+    render(<VolumeSlider label="Prueba" defaultValue={80} />);
+    expect(screen.getByRole('slider')).toHaveAttribute('aria-valuenow', '80');
   });
-
 });
